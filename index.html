@@ -36,8 +36,7 @@
 <section id="tab-inicio" class="tab-panel active" data-tab-panel="inicio">
 <section class="hero" id="top">
   <div class="bg-photo">
-    <!-- FOTOGRAFÍA DE EJEMPLO: reemplazar por foto real del local en producción -->
-    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=1600&auto=format&fit=crop" alt="">
+    <img src="fotos/fachada.jpg" alt="Fachada de MM Cafetería y Pastelería">
   </div>
   <img class="logo-mark hero-mark" id="heroLogo" alt="Logo MM Cafetería y Pastelería">
   <span class="eyebrow">Cafetería · Pastelería</span>
@@ -80,12 +79,13 @@
       <h2>Nuestra pastelería</h2>
     </div>
     <div class="gallery-grid">
-      <figure><img src="https://images.unsplash.com/photo-1488477304112-4944851de03d?q=80&w=800&auto=format&fit=crop" alt="Vitrina de pastelería"><div class="gallery-tag">Vitrina del día</div></figure>
-      <figure><img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=800&auto=format&fit=crop" alt="Torta con frutos rojos"><div class="gallery-tag">Torta de la casa</div></figure>
-      <figure><img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=800&auto=format&fit=crop" alt="Trozo de torta"><div class="gallery-tag">Trozo individual</div></figure>
-      <figure><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Café con arte latte"><div class="gallery-tag">Café de especialidad</div></figure>
+      <figure><img src="fotos/vitrina.jpg" alt="Vitrina de pastelería"><div class="gallery-tag">Vitrina del día</div></figure>
+      <figure><img src="fotos/interior.jpg" alt="Interior del local"><div class="gallery-tag">Nuestro rincón</div></figure>
+      <figure><img src="fotos/letrero-neon.jpg" alt="Letrero neón MM Cafetería y Pastelería"><div class="gallery-tag">MM Cafetería y Pastelería</div></figure>
+      <figure><img src="fotos/bandeja-dulces.jpg" alt="Bandeja de dulces surtidos"><div class="gallery-tag">Bandeja de dulces</div></figure>
+      <figure><img src="fotos/cappuccino.jpg" alt="Cappuccino con arte latte"><div class="gallery-tag">Café de especialidad</div></figure>
+      <figure><img src="fotos/batidos.jpg" alt="Batidos de vainilla y chocolate"><div class="gallery-tag">Batidos de la casa</div></figure>
     </div>
-    <!-- FOTOGRAFÍAS DE EJEMPLO (Unsplash): reemplazar por fotos reales de la vitrina y la terraza antes de la entrega final -->
   </div>
 </section>
 </section>
@@ -109,12 +109,37 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">lo que dicen</span>
-      <h2>131 opiniones en Google</h2>
+      <h2>131 opiniones en Google · 4.8 / 5</h2>
     </div>
-    <div class="resena">
-      <div class="stars">★★★★★</div>
-      <blockquote>"Los comensales dicen que les gusta la comida deliciosa y fresca de este café, que incluye una variedad de pasteles y tartas, y aprecian la hermosa presentación. Mencionan también el ambiente cálido y agradable, junto con el excelente servicio. Otras personas dicen que los precios son muy buenos y que el ambiente es acogedor."</blockquote>
-      <footer>— Resumen de opiniones de Google Maps · 4.8 / 5 (131 opiniones)</footer>
+    <div class="resenas-grid">
+      <article class="resena-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fuimos por primera vez y tuvimos una grata sorpresa, la atención muy buena, todo muy rico e incluso llevamos algunas cosas para comer en casa. El ambiente es grato con decoración muy bonita."</p>
+        <footer>
+          <div class="resena-avatar">SC</div>
+          <div class="resena-meta"><strong>Sandra Canales</strong>Local Guide · hace 6 meses</div>
+        </footer>
+      </article>
+      <article class="resena-card">
+        <div class="stars">★★★★★</div>
+        <p>"Excelente, super buenos precios, atención 10/10 y todo siempre es muy rico. Me pedí una promo de cheesecake de oreo con un chocolate caliente, pero el cheesecake de chocolate es el mejor sin duda alguna."</p>
+        <footer>
+          <div class="resena-avatar">JV</div>
+          <div class="resena-meta"><strong>Javier Vega</strong>hace 4 meses</div>
+        </footer>
+      </article>
+      <article class="resena-card">
+        <div class="stars">★★★★★</div>
+        <p>"Vine junto a mi pareja y todo muy rico. El ambiente y atención espectacular, todo es muy bonito, quedamos encantados."</p>
+        <footer>
+          <div class="resena-avatar">PP</div>
+          <div class="resena-meta"><strong>Paola Pizarro</strong>hace 2 meses</div>
+        </footer>
+      </article>
+    </div>
+    <div class="cta-row" style="justify-content:center;">
+      <!-- Enlace real de la ficha de Google Maps del negocio (verificado: MM Cafeteria Y Pasteleria, 4.8★, 131 opiniones, 4 Poniente 1319 Maipú). Lleva directo a la ficha, con el botón "Escribir una opinión" a un clic. -->
+      <a class="btn btn-solid" href="https://maps.app.goo.gl/qg2PLxre2iJf62518" target="_blank" rel="noopener">★ Escribir una opinión en Google</a>
     </div>
   </div>
 </section>
@@ -129,10 +154,15 @@
         <h2>Visítanos</h2>
       </div>
       <div class="visit-block"><h3>Dirección</h3><p>Av. Cuatro Poniente 1319, Local 1, El Abrazo de Maipú, Región Metropolitana</p></div>
-      <div class="visit-block"><h3>Horario</h3><p>Domingo a jueves 16:30 a 21:00h<br>Viernes y sábados 16:30 a 21:30h</p></div>
+      <div class="visit-block">
+        <h3>Horario</h3>
+        <p>Domingo a jueves 16:30 a 21:00h<br>Viernes y sábados 16:30 a 21:30h</p>
+        <div class="visit-pill"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">Consultando horario…</span></div>
+      </div>
       <div class="visit-block"><h3>Contacto</h3><p>+56 9 5332 4233 · @mmcafeteriaypasteleria</p></div>
       <div class="cta-row" style="justify-content:flex-start;">
         <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=4+Poniente+1319,+Maip%C3%BA" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff;" href="https://waze.com/ul?q=4%20Poniente%201319%2C%20Maip%C3%BA&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
         <a class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff;" href="https://wa.me/56953324233" target="_blank" rel="noopener">Escribir por WhatsApp</a>
       </div>
     </div>
@@ -148,6 +178,7 @@
   <div class="footer-inner">
     <img class="logo-mark footer-mark" id="footerLogo" alt="Logo MM Cafetería y Pastelería">
     <p class="footer-tag">Cafetería y Pastelería · El Abrazo de Maipú</p>
+    <p class="footer-contact">4 Poniente 1319, Maipú · <a href="tel:+56953324233">+56 9 5332 4233</a></p>
     <div class="footer-badges">
       <span class="badge" style="border-color:rgba(255,255,255,0.35); color:#fff; background:rgba(255,255,255,0.08);">Tarjetas y pago con celular</span>
       <span class="badge" style="border-color:rgba(255,255,255,0.35); color:#fff; background:rgba(255,255,255,0.08);">Estacionamiento gratuito</span>
@@ -176,11 +207,22 @@
 <div class="overlay modal-overlay" id="modalOverlay">
   <div class="modal-box">
     <button class="close-x" id="modalCloseBtn">&times;</button>
+    <div class="modal-photo" id="modalPhoto" style="display:none;"></div>
     <h3 id="modalName"></h3>
     <div class="price mono" id="modalPrice"></div>
     <p class="desc" id="modalDesc"></p>
     <button class="btn btn-solid" style="width:100%; justify-content:center;" id="modalAddBtn">Agregar a la bolsa</button>
   </div>
+</div>
+
+<!-- WIDGET FLOTANTE: Instagram + WhatsApp -->
+<div class="float-widget">
+  <a class="float-btn instagram" href="https://instagram.com/mmcafeteriaypasteleria" target="_blank" rel="noopener" aria-label="Abrir Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
+  <a class="float-btn whatsapp" href="https://wa.me/56953324233" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.85.505 3.633 1.457 5.191L2.06 22l4.933-1.36A9.95 9.95 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2zm0 18.062a8.036 8.036 0 0 1-4.096-1.126l-.294-.175-3.05.84.827-3.017-.192-.31A8.05 8.05 0 1 1 20.05 12.05a8.05 8.05 0 0 1-8.05 8.012z"/></svg>
+  </a>
 </div>
 
 <script src="script.js"></script>
