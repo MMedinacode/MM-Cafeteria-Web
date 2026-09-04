@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MM Cafetería y Pastelería</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" data-tab="inicio">
+      <img class="logo-mark" id="navLogo" alt="Logo MM Cafetería y Pastelería">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><button class="nav-link active" data-tab="inicio">Inicio</button></li>
+      <li><button class="nav-link" data-tab="nosotros">Nosotros</button></li>
+      <li><button class="nav-link" data-tab="carta">Carta</button></li>
+      <li><button class="nav-link" data-tab="resenas">Reseñas</button></li>
+      <li><button class="nav-link" data-tab="visitanos">Visítanos</button></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn">Pedido <span class="cart-count" id="cartCount">0</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+<section id="tab-inicio" class="tab-panel active" data-tab-panel="inicio">
+<section class="hero" id="top">
+  <div class="bg-photo">
+    <!-- FOTOGRAFÍA DE EJEMPLO: reemplazar por foto real del local en producción -->
+    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=1600&auto=format&fit=crop" alt="">
+  </div>
+  <img class="logo-mark hero-mark" id="heroLogo" alt="Logo MM Cafetería y Pastelería">
+  <span class="eyebrow">Cafetería · Pastelería</span>
+  <h1>Pasteles frescos y café de especialidad en un rincón con alma de tetería</h1>
+  <p class="tagline">Tortas, cheesecakes y bollería hechos con cariño, en un espacio turquesa lleno de corazones, tazas vintage y detalles hechos a mano.</p>
+  <div class="hero-info">
+    <div class="hero-pill"><span class="status-dot" id="statusDot"></span> <span id="statusText">Consultando horario…</span></div>
+    <div class="hero-pill">★ <strong>4.8</strong> (131 opiniones)</div>
+    <div class="hero-pill"><strong>4 Poniente 1319</strong>, Maipú</div>
+  </div>
+  <div class="cta-row">
+    <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+    <a class="btn btn-outline" href="https://wa.me/56953324233" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </div>
+</section>
+</section>
+
+<section id="tab-nosotros" class="tab-panel" data-tab-panel="nosotros">
+<section id="nosotros">
+  <div class="wrap sobre">
+    <span class="eyebrow" style="color:var(--pink);">quiénes somos</span>
+    <h2 style="margin-bottom:20px;">Un rincón para pastelería de verdad</h2>
+    <p>MM Cafetería y Pastelería es un espacio en El Abrazo de Maipú donde las tortas y cheesecakes se hacen frescos, y el café se sirve con la misma dedicación. La terraza con mesas de madera pintada y los detalles de corazones colgantes hacen que cualquier once se sienta especial. Un lugar a la moda, agradable e informal, con entrada accesible para sillas de ruedas, ideal para ir en grupo a compartir un trozo de torta.</p>
+    <div class="badges-row">
+      <span class="badge" style="border-color:rgba(239,0,128,0.35); color:var(--pink); background:rgba(239,0,128,0.06);">Pastelería fresca</span>
+      <span class="badge" style="border-color:rgba(239,0,128,0.35); color:var(--pink); background:rgba(239,0,128,0.06);">Terraza al aire libre</span>
+      <span class="badge" style="border-color:rgba(45,138,150,0.4); color:var(--teal-2); background:rgba(45,138,150,0.08);">Entrada accesible</span>
+      <span class="badge" style="border-color:rgba(45,138,150,0.4); color:var(--teal-2); background:rgba(45,138,150,0.08);">Ideal para grupos</span>
+      <span class="badge" style="border-color:rgba(45,138,150,0.4); color:var(--teal-2); background:rgba(45,138,150,0.08);">Ideal para ir con niños</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span class="heart">♥</span></div>
+
+<section style="background:var(--teal-2); color:#fff;">
+  <div class="wrap">
+    <div class="section-head dark">
+      <span class="eyebrow">para chusmear</span>
+      <h2>Nuestra pastelería</h2>
+    </div>
+    <div class="gallery-grid">
+      <figure><img src="https://images.unsplash.com/photo-1488477304112-4944851de03d?q=80&w=800&auto=format&fit=crop" alt="Vitrina de pastelería"><div class="gallery-tag">Vitrina del día</div></figure>
+      <figure><img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=800&auto=format&fit=crop" alt="Torta con frutos rojos"><div class="gallery-tag">Torta de la casa</div></figure>
+      <figure><img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=800&auto=format&fit=crop" alt="Trozo de torta"><div class="gallery-tag">Trozo individual</div></figure>
+      <figure><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Café con arte latte"><div class="gallery-tag">Café de especialidad</div></figure>
+    </div>
+    <!-- FOTOGRAFÍAS DE EJEMPLO (Unsplash): reemplazar por fotos reales de la vitrina y la terraza antes de la entrega final -->
+  </div>
+</section>
+</section>
+
+<section id="tab-carta" class="tab-panel" data-tab-panel="carta">
+<section id="carta" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">la carta</span>
+      <h2>Nuestra carta</h2>
+    </div>
+    <div class="menu-tabs" id="menuTabs"></div>
+    <div id="menuPanels"></div>
+    <p class="menu-note">Precios de retiro en local. Consulta por tortas personalizadas y despacho por WhatsApp.</p>
+  </div>
+</section>
+</section>
+
+<section id="tab-resenas" class="tab-panel" data-tab-panel="resenas">
+<section id="resenas">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">lo que dicen</span>
+      <h2>131 opiniones en Google</h2>
+    </div>
+    <div class="resena">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Los comensales dicen que les gusta la comida deliciosa y fresca de este café, que incluye una variedad de pasteles y tartas, y aprecian la hermosa presentación. Mencionan también el ambiente cálido y agradable, junto con el excelente servicio. Otras personas dicen que los precios son muy buenos y que el ambiente es acogedor."</blockquote>
+      <footer>— Resumen de opiniones de Google Maps · 4.8 / 5 (131 opiniones)</footer>
+    </div>
+  </div>
+</section>
+</section>
+
+<section id="tab-visitanos" class="tab-panel" data-tab-panel="visitanos">
+<section class="visit" id="visitanos" style="background:linear-gradient(180deg, #1f6169, var(--teal-2)); color:#fff;">
+  <div class="wrap visit-grid">
+    <div>
+      <div class="section-head dark" style="text-align:left; margin-bottom:32px;">
+        <span class="eyebrow">te esperamos</span>
+        <h2>Visítanos</h2>
+      </div>
+      <div class="visit-block"><h3>Dirección</h3><p>Av. Cuatro Poniente 1319, Local 1, El Abrazo de Maipú, Región Metropolitana</p></div>
+      <div class="visit-block"><h3>Horario</h3><p>Domingo a jueves 16:30 a 21:00h<br>Viernes y sábados 16:30 a 21:30h</p></div>
+      <div class="visit-block"><h3>Contacto</h3><p>+56 9 5332 4233 · @mmcafeteriaypasteleria</p></div>
+      <div class="cta-row" style="justify-content:flex-start;">
+        <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=4+Poniente+1319,+Maip%C3%BA" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff;" href="https://wa.me/56953324233" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="map-frame">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=4+Poniente+1319,+Maip%C3%BA&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img class="logo-mark footer-mark" id="footerLogo" alt="Logo MM Cafetería y Pastelería">
+    <p class="footer-tag">Cafetería y Pastelería · El Abrazo de Maipú</p>
+    <div class="footer-badges">
+      <span class="badge" style="border-color:rgba(255,255,255,0.35); color:#fff; background:rgba(255,255,255,0.08);">Tarjetas y pago con celular</span>
+      <span class="badge" style="border-color:rgba(255,255,255,0.35); color:#fff; background:rgba(255,255,255,0.08);">Estacionamiento gratuito</span>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-links">
+      <a href="https://instagram.com/mmcafeteriaypasteleria" target="_blank" rel="noopener">@mmcafeteriaypasteleria</a>
+      <span>·</span>
+      <span>Sitio demo diseñado con cariño</span>
+    </div>
+  </div>
+</footer>
+
+<!-- OVERLAY CARRITO -->
+<div class="overlay" id="cartOverlay">
+  <div class="cart-panel">
+    <button class="close-x" id="cartCloseBtn">&times;</button>
+    <h3>Tu pedido</h3>
+    <div id="cartLines"><p class="cart-empty">Todavía no agregaste nada.</p></div>
+    <div class="cart-total"><span>Total</span><span class="mono" id="cartTotal">$0</span></div>
+    <a class="btn btn-solid" style="justify-content:center; margin-top:14px;" id="checkoutBtn" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  </div>
+</div>
+
+<!-- OVERLAY MODAL PRODUCTO -->
+<div class="overlay modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="close-x" id="modalCloseBtn">&times;</button>
+    <h3 id="modalName"></h3>
+    <div class="price mono" id="modalPrice"></div>
+    <p class="desc" id="modalDesc"></p>
+    <button class="btn btn-solid" style="width:100%; justify-content:center;" id="modalAddBtn">Agregar a la bolsa</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
